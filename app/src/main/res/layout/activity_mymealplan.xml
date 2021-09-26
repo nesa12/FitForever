@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b6"
+    tools:context=".mymealplan">
+
+
+        <EditText
+            android:id="@+id/m_mealplanname"
+            android:layout_width="286dp"
+            android:layout_height="42dp"
+            android:background="@drawable/meal_plan_cus_button3"
+            android:ems="10"
+            android:hint="@string/meal_plan_Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/m_menuedit1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.387" />
+
+        <EditText
+            android:id="@+id/m_menuedit3"
+            android:layout_width="286dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/meal_plan_cus_button3"
+            android:ems="10"
+            android:hint="@string/healthy_plan_menu"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/m_menuedit1" />
+
+        <EditText
+            android:id="@+id/m_menuedit1"
+            android:layout_width="286dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="372dp"
+            android:background="@drawable/meal_plan_cus_button3"
+            android:ems="10"
+            android:hint="@string/calorie_menus_1200"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/m_addmealtext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/add_categorized_menus"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/m_editTextTextPersonName" />
+
+        <Button
+            android:id="@+id/m_addmealplan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/meal_plan_custom_button"
+            android:text="@string/add_meal_plan"
+            android:textColor="#0C0C0C"
+            android:textColorLink="#009688"
+            android:textStyle="bold"
+            app:backgroundTint="#50C5B7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/m_menuedit3"
+            app:layout_constraintVertical_bias="0.727" />
+
+        <EditText
+            android:id="@+id/m_editTextTextPersonName"
+            android:layout_width="286dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/meal_plan_cus_button3"
+            android:ems="10"
+            android:hint="@string/description_for_meal_plan"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/m_mealplanname" />
+
+
+        <ImageButton
+            android:id="@+id/MimageButton6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/cus_btn2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_home_24"
+            tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
