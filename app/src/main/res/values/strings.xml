@@ -576,4 +576,10 @@
     </string-array>
 
 
+    <string name="header01">Workout Plan</string>
+    <string name="header02">Set Your Schedule</string>
+    <string name="header03">Update the Schedule</string>
+    <string name="text_card01">FULLBODY</string>
+    <string name="text_card02">BELLY</string>
+    <string name="text_card03">LEGS</string>
 </resources>

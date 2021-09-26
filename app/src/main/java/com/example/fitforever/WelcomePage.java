@@ -86,8 +86,8 @@ public class WelcomePage extends AppCompatActivity {
     }
 
     public void  openWorkout(){
-//        Intent in = new Intent(WelcomePage.this,MainWorkoutActivity.class);
-//        startActivity(in);
+        Intent in = new Intent(WelcomePage.this,MainWorkoutActivity.class);
+        startActivity(in);
     }
 
    /*public void  openTimeTable(){

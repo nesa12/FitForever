@@ -125,6 +125,18 @@
 
 
         <activity
+            android:name=".UpdateScheduleActivity" />
+        <activity
+            android:name=".DailyWorkoutsActivity" />
+        <activity
+            android:name=".WorkoutListActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="Add Your Task" />
+        <activity
+            android:name=".MainWorkoutActivity"
+            android:label="Workout Plan"/>
+        <activity
             android:name=".StartFitForever"
             android:exported="true"
             android:label="FitForever">

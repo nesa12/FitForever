@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainWorkoutActivity"
+    android:background="@drawable/workout_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/header01"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:textSize="50dp">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/fullbody_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_card01"
+            android:background="@drawable/text_card_bg"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:id="@+id/belly_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_card02"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/text_card_bg"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:id="@+id/legs_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_card03"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/text_card_bg"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
