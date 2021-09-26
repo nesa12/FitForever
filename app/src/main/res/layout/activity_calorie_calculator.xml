@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieCalculator">
+
+    <TextView
+        android:id="@+id/topBar5"
+        android:layout_width="392dp"
+        android:layout_height="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="106dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/txtGender"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/txtAge"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txtFitnessLevel"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtFitnessLevel"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinFitnesslvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:hint="@string/edtAge"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtFitnessLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toEndOf="@+id/txtAge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="190dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="112dp"
+            android:layout_height="62dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/radioMale1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radioFemale1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinFitnesslvl"
+        android:layout_width="202dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="60dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalCalorie"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnCalCalorie"
+        android:layout_width="301dp"
+        android:layout_height="67dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="CALORIES"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2389E6"
+        app:icon="@drawable/bmi"
+        app:iconPadding="1dp"
+        app:iconSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFitnessLevel"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <ImageButton
+        android:id="@+id/BackArr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_arrow_back"
+        android:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/topBar5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cus_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

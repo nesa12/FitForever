@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bmi45"
+    tools:context=".MyProfile">
+
+
+      <TextView
+        android:id="@+id/topBar2"
+        android:layout_width="405dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btnUpdateWeight"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/text_card_bg"
+        android:text="@string/btnUpdateWeight"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#009688"
+        app:icon="@drawable/update"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnBMICalculator"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/text_card_bg"
+        android:text="@string/btnBMICalculator"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#009688"
+        app:icon="@drawable/bmi"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateWeight"
+        app:layout_constraintVertical_bias="0.006"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnReminder"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/text_card_bg"
+        android:text="@string/btnReminder"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#009688"
+        app:icon="@drawable/reminder"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBar2"
+        app:layout_constraintVertical_bias="0.439"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnRateus"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/btnRateus"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@drawable/text_card_bg"
+        android:textSize="25sp"
+        app:backgroundTint="#009688"
+        app:icon="@drawable/rate"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReminder"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlCompat" />
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cus_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

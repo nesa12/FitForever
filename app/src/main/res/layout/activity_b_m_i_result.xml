@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BMIResult">
+
+<TextView
+android:id="@+id/topBar8"
+android:layout_width="418dp"
+android:layout_height="0dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.0" />
+
+<ImageView
+android:id="@+id/imageView3"
+android:layout_width="317dp"
+android:layout_height="235dp"
+android:background="@drawable/img_bmi"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.378"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.074" />
+
+<TextView
+android:id="@+id/txtYourBMI"
+android:layout_width="match_parent"
+android:layout_height="45dp"
+android:layout_marginTop="4dp"
+android:background="#1cab9a"
+android:text="@string/txtYourBMI"
+android:textAlignment="center"
+android:textColor="@color/black"
+android:textSize="20sp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/imageView3"
+tools:ignore="RtlCompat" />
+
+<TableLayout
+android:id="@+id/tableLayout"
+android:layout_width="388dp"
+android:layout_height="276dp"
+android:layout_marginTop="5dp"
+android:background="#EA651D"
+android:stretchColumns="1"
+android:textAlignment="center"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/txtYourBMI"
+tools:ignore="MissingConstraints,RtlCompat">
+
+<TableRow>
+
+    <TextView
+
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:text="RANGE"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_column="1"
+        android:text="STATE"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="66dp">
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="43dp"
+        android:layout_column="0"
+        android:background="@color/white"
+        android:text="LESS THAN 18.5"
+        android:textAlignment="viewStart"
+        android:textColor="#535250"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:background="@color/black"
+        android:text="UNDER WEIGHT"
+        android:textAlignment="viewStart"
+        android:textColor="#ff1d1d"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_column="0"
+        android:background="@color/black"
+        android:text="18.5 TO 25"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:background="@color/white"
+        android:text="NORMAL "
+        android:textAlignment="viewStart"
+        android:textColor="#8a464d"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_width="163dp"
+        android:layout_height="54dp"
+        android:layout_column="0"
+        android:background="@color/white"
+        android:text="26 TO 30"
+        android:textAlignment="viewStart"
+        android:textColor="#535250"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:background="@color/black"
+        android:text="OVERWEIGHT  "
+        android:textAlignment="viewStart"
+        android:textColor="#E64F14"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+
+<TableRow>
+
+    <TextView
+        android:layout_width="163dp"
+        android:layout_height="47dp"
+        android:layout_column="0"
+        android:background="@color/black"
+        android:text="31 TO 35"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:background="@color/white"
+        android:text="@string/obese"
+        android:textAlignment="viewStart"
+        android:textColor="#ED3219"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</TableRow>
+
+<TableRow android:layout_height="76dp">
+
+    <TextView
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_column="0"
+        android:background="@color/white"
+        android:text=" ABOVE 35"
+        android:textAlignment="viewStart"
+        android:textColor="#535250"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:background="@color/black"
+        android:text="@string/morbility_obese"
+        android:textAlignment="viewStart"
+        android:textColor="#ff9d9d"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</TableRow>
+</TableLayout>
+
+<ImageButton
+android:id="@+id/BackArr"
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:layout_marginStart="36dp"
+android:layout_marginTop="4dp"
+android:background="@drawable/ic_arrow_back"
+android:tint="#FFFFFF"
+app:layout_constraintStart_toStartOf="@+id/topBar8"
+app:layout_constraintTop_toTopOf="parent"
+tools:ignore="RtlCompat" />
+
+<ImageButton
+android:id="@+id/imageButton6"
+android:layout_width="50dp"
+android:layout_height="50dp"
+android:layout_marginBottom="16dp"
+android:background="@drawable/cus_btn2"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.5"
+app:layout_constraintStart_toStartOf="parent"
+app:srcCompat="@drawable/ic_baseline_home_24"
+tools:ignore="VectorDrawableCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

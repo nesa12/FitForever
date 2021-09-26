@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_reminder3"
+    tools:context=".AddActivity">
+
+    <!--<TextView
+        android:id="@+id/topBar7"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:background="@drawable/toolbar"
+        android:text="ADD REMINDER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/BackArr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_arrow_back"
+        android:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/topBar7"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/reminderName"
+        android:layout_width="314dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Reminder Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reminderTime"
+        android:layout_width="314dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Reminder Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminderName" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="ADD"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1fb598"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminderTime" />
+
+    <Button
+        android:id="@+id/btnNotify"
+        android:layout_width="306dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text=" Notification"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:backgroundTint="#26635D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cus_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
