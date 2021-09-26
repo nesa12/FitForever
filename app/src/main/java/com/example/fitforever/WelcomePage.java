@@ -81,8 +81,8 @@ public class WelcomePage extends AppCompatActivity {
 
 
     public void  openMealPlan(){
-//        Intent in = new Intent(WelcomePage.this,Meal_Plan_Main.class);
-//        startActivity(in);
+        Intent in = new Intent(WelcomePage.this,Meal_Plan_Main.class);
+        startActivity(in);
     }
 
     public void  openWorkout(){
