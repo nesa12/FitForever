@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".WelcomePage">
+
+    <ImageView
+        android:layout_width="359dp"
+        android:layout_height="218dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar1" />
+
+    <TextView
+        android:id="@+id/topBar1"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:background="#1FB598"
+        android:gravity="center_horizontal"
+        android:text="@string/topBar1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myprofilebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/myprofilebtn"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="@string/myprofilebtn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#577284"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/workoutbtn"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="@string/workoutbtn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#609C96"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timetablebtn"
+        app:layout_constraintVertical_bias="0.37"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/mealplanbtn"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="@string/mealplanbtn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#609C96"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myprofilebtn"
+        app:layout_constraintVertical_bias="0.094"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/timetablebtn"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="@string/timetablebtn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#577284"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealplanbtn"
+        app:layout_constraintVertical_bias="0.149"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

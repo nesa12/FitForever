@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    tools:context=".RateUs">
+
+ <TextView
+     android:id="@+id/topBar6"
+     android:layout_width="392dp"
+     android:layout_height="3dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.5"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.0" />
+
+
+ <ImageButton
+     android:id="@+id/BackArr"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:layout_marginStart="35dp"
+     android:layout_marginTop="5dp"
+     android:background="@drawable/ic_arrow_back"
+     android:tint="#FFFFFF"
+     app:layout_constraintStart_toStartOf="@+id/topBar6"
+     app:layout_constraintTop_toTopOf="parent"
+     tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txtRate"
+        android:layout_width="292dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/txtRate"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="161dp"
+        android:layout_height="69dp"
+        android:background="@drawable/custom_button_profilemgt"
+        android:text="@string/btnRate"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00897B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRate"
+        app:layout_constraintVertical_bias="0.783"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2px" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#ffd700"
+        android:rating="0"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/btnRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRate"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="370dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rating"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cus_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
