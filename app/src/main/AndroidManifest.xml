@@ -18,6 +18,78 @@
             android:label="WELCOME TO FitForever"
             android:parentActivityName=".StartFitForever" />
 
+        <activity
+            android:name="com.example.fitforever.Healthy_Menu3"
+            android:label="Menu 3"
+            android:parentActivityName="com.example.fitforever.HealthyMealPlan" />
+        <activity
+            android:name="com.example.fitforever.Healthy_Menu2"
+            android:label="Menu 2"
+            android:parentActivityName="com.example.fitforever.HealthyMealPlan" />
+        <activity
+            android:name="com.example.fitforever.Menu5_1200"
+            android:label="Menu 5"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_1200" />
+        <activity
+            android:name="com.example.fitforever.Menu4_1200"
+            android:label="Menu 4"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_1200" />
+        <activity
+            android:name="com.example.fitforever.Menu3_1200"
+            android:label="Menu 3"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_1200" />
+        <activity
+            android:name="com.example.fitforever.Lbm_table"
+            android:label="Lean Body Mass Chart"
+            android:parentActivityName="com.example.fitforever.Protein_Calculator" />
+        <activity
+            android:name="com.example.fitforever.HealthyMenu1"
+            android:label="Menu 1"
+            android:parentActivityName="com.example.fitforever.HealthyMealPlan" />
+        <activity
+            android:name="com.example.fitforever.HealthyMealPlan"
+            android:label="Healthy Meal Plan"
+            android:parentActivityName="com.example.fitforever.Categorized_Meal_Plan" />
+        <activity
+            android:name="com.example.fitforever.Protein_Calculator"
+            android:label="Protein Calculator"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_Main" />
+        <activity
+            android:name="com.example.fitforever.Menu2_1200"
+            android:label="Menu 2"
+            android:parentActivityName="com.example.fitforever.Categorized_Meal_Plan" />
+        <activity
+            android:name="com.example.fitforever.mymealplan"
+            android:label="Add Meal Plan"
+            android:parentActivityName="com.example.fitforever.crud_main" />
+        <activity
+            android:name="com.example.fitforever.Menu1_1200"
+            android:label="Menu 1"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_1200" />
+        <activity
+            android:name="com.example.fitforever.EditmeealPlan"
+            android:label="Edit Meal Plan"
+            android:parentActivityName="com.example.fitforever.crud_main" />
+        <activity
+            android:name="com.example.fitforever.crud_main"
+            android:label="Meal plan List"
+            android:parentActivityName="com.example.fitforever.Categorized_Meal_Plan" />
+        <activity
+            android:name="com.example.fitforever.Meal_Plan_1200"
+            android:label="1200 Calorie Diet Plan"
+            android:parentActivityName="com.example.fitforever.Categorized_Meal_Plan" />
+        <activity
+            android:name="com.example.fitforever.Categorized_Meal_Plan"
+            android:label="Categorized Meal Plan"
+            android:parentActivityName="com.example.fitforever.Meal_Plan_Main" />
+
+
+
+
+        <activity android:name="com.example.fitforever.Meal_Plan_Main"
+            android:label="Meal Plan"
+            />
+
         <activity android:name=".MyProfile" />
         <activity android:name=".UpdateWeight" />
         <activity android:name=".BMICalculator" />
