@@ -90,6 +90,31 @@
             android:label="Meal Plan"
             />
 
+        <activity
+            android:name="com.example.fitforever.WaterIntakeCalculator"
+            android:label="Daily Water Intake Calculator"
+            android:parentActivityName="com.example.fitforever.WelcomeToTimetablePage" />
+        <activity
+            android:name="com.example.fitforever.UpdateTimetable"
+            android:label="UPDATE DETAILS"
+            android:parentActivityName="com.example.fitforever.Timetable" />
+        <activity
+            android:name="com.example.fitforever.Adddetails"
+            android:label="ADD DETAILS"
+            android:parentActivityName="com.example.fitforever.Timetable" />
+        <activity
+            android:name="com.example.fitforever.Timetable"
+            android:label="Progress Plan"
+            android:parentActivityName="com.example.fitforever.WelcomeToTimetablePage" />
+
+
+
+        <activity android:name="com.example.fitforever.WelcomeToTimetablePage"
+            android:label="Progress Shedule"
+            />
+
+
+
         <activity android:name=".MyProfile" />
         <activity android:name=".UpdateWeight" />
         <activity android:name=".BMICalculator" />

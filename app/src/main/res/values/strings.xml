@@ -460,6 +460,43 @@
 
     <string name="menu__3h25">	One cup non-fat milk and One cup strawberries </string>
 
+    <string name="tstartedbtn">Get Started</string>
+    <string name="maintext1">Personalize Your Workout Timetable</string>
+    <string name="wcalbtn">Calculate expected daily water intake</string>
+
+    <string name="add3">ADD</string>
+
+    <string name="workoutlist">Today workout list</string>
+
+    <string name="listex3">Hours : </string>
+    <string name="time5">Time Period</string>
+    <string name="txtlist" />
+    <string name="add">SAVE</string>
+    <string name="day">Choose a day of the week</string>
+    <string name="list6">What exercise you planing to do?</string>
+    <string name="listex">Ex: Abbs Exercise, Legs Exercise, Arm Exercise, Chest Exercise, Butt Exercise, Full body Exercise</string>
+    <string name="day1" />
+
+    <string name="time3" />
+    <string name="day4" />
+    <string name="list8">What exercise you planing to do?</string>
+    <string name="listex2">Ex: Abbs Exercise, Legs Exercise, Arm Exercise, Chest Exercise, Butt Exercise, Full body Exercise</string>
+    <string name="txtlist2" />
+    <string name="updatetable">UPDATE</string>
+    <string name="Deletetable">Delete</string>
+
+    <string name="watertext1">Enter your body weight (KG)</string>
+    <string name="tbodyweigt" />
+    <string name="watertext2">Enter minutes of exercise daily</string>
+    <string name="minofex" />
+    <string name="watercalculator">Calculate</string>
+    <string name="calresult" />
+
+
+
+
+
+
     <string name="topBar2">MY PROFILE</string>
     <string name="btnUpdateWeight">UPDATE WEIGHT</string>
     <string name="btnBMICalculator">BMI CALCULATOR</string>

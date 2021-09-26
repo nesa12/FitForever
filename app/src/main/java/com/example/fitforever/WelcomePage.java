@@ -64,8 +64,8 @@ public class WelcomePage extends AppCompatActivity {
 
 
     public void openTimeTable(){
-//        Intent in = new Intent(WelcomePage.this,WelcomeToTimetablePage.class);
-//        startActivity(in);
+        Intent in = new Intent(WelcomePage.this,WelcomeToTimetablePage.class);
+       startActivity(in);
     }
 
 //    public void  openMyProfile(){
