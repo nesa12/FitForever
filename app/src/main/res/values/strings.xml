@@ -1,440 +1,100 @@
+<?xml version="1.0"?>
+
 <resources>
+
     <string name="app_name">FitForever</string>
 
     <string name="topBar0">FitForever</string>
-    <string name="started_button_meal_plan">LETS GO!</string>
+    <string name="txtenterUN">ENTER USERNAME</string>
+    <string name="edtUN">Enter username</string>
+    <string name="btnstart">START</string>
 
-    <string name="proteinCalculator">Protein Calculator</string>
+    <string name="topBar1">WELCOME !!!</string>
+    <string name="myprofilebtn">WEIGHT PLAN</string>
+    <string name="mealplanbtn">MEAL PLAN</string>
+    <string name="timetablebtn">PROGRESS PLAN</string>
+    <string name="workoutbtn">WORKOUT PLAN</string>
 
-    <string name="AreYoLookingFor">Customize Your</string>
 
-    <string name="MealPlansToCustomize">Meal Plans</string>
 
-    <string name="SelectYour">Select Your</string>
 
-    <string name="Category">Category</string>
+    <string name="topBar2">MY PROFILE</string>
+    <string name="btnUpdateWeight">UPDATE WEIGHT</string>
+    <string name="btnBMICalculator">BMI CALCULATOR</string>
+    <string name="btnCalCalculator">CALORIE TABLE</string>
+    <string name="btnReminder">REMINDER</string>
+    <string name="btnRateus">RATE US</string>
+    <string name="btnFeedback">FEEDBACK</string>
 
-    <string name="MealPlans">Meal Plans</string>
+    <string name="txtGender">GENDER</string>
+    <string name="txtTarget">TARGET</string>
+    <string name="btnsave1">SAVE</string>
+    <string name="radioMale1">MALE</string>
+    <string name="radioFemale1">FEMALE</string>
 
-    <string name="button4_calorie">Diet Plan 1 - 1200 Calories </string>
+    <string name="topBar3">UPDATE WEIGHT</string>
 
-    <string name="button6_calorie">Healthy Meal Plan</string>
+    <string name="txtcurrentweight">CURRENT WEIGHT (kg)</string>
+    <string name="txtgoalweight">GOAL WEIGHT (kg)</string>
+    <string name="edtcurrentweight">90</string>
+    <string name="edtgoalweight">75</string>
+    <string name="btnUpdate">UPDATE</string>
+    <string name="btnSave">SAVE</string>
+    <string name="btnNext">NEXT</string>
 
-    <string name="MealPlans2">Meal Plans</string>
+    <string name="topBar4">BMI CALCULATOR</string>
+    <string name="txtheight">HEIGHT (cm)</string>
+    <string name="txtweight">WEIGHT (kg)</string>
+    <string name="btnCalcBMI">CALCULATE</string>
 
-    <string name="CalorieDietPlan1200">1200 Calorie Diet Plan</string>
+    <string name="topBar5">CALORIE TABLE</string>
+    <string name="txtAge">AGE (Years)</string>
+    <string name="edtAge">22</string>
+    <string name="txtFitnessLevel">FITNESS LEVEL</string>
 
-    <string name="button_menu1">Menu 01</string>
+    <string name="topBar6">RATE US</string>
+    <string name="txtRate">The best we can get is all 5 stars.  We would appreciate if you can rate us.</string>
+    <string name="btnRate">RATE</string>
 
-    <string name="button_menu2">Menu 02</string>
+    <string name="topBar7">REMINDER</string>
+    <string name="txtStartTime">START TIME</string>
+    <string name="btnDelete">DELETE</string>
+    <string name="btnUpdateRemind">UPDATE</string>
+    <string name="btnSaveRemind">SAVE</string>
+    <string name="btnChecked">SEEN</string>
 
-    <string name="button_menu3">Menu 03</string>
+    <string name="topBar8">BMI RESULT</string>
+    <string name="txtYourBMI">BODY MASS INDEX (BMI) TABLE </string>
+    <string name="txtBMITable">BMI TABLE</string>
 
-    <string name="button_menu4">Menu 04</string>
+    <string name="topBar9">CALORIE RESULT</string>
+    <string name="txtYourCalorie">YOUR REQUIRED CALORIES </string>
+    <string name="txtCalorieTable">CALORIE TABLE</string>
 
-    <string name="button_menu5">Menu 05</string>
+    <string name="bmiTable">BMI TABLE</string>
+    <string name="obese">obese</string>
+    <string name="morbility_obese">morbility_obese</string>
 
-    <string name="button_menu6">Menu 06</string>
+    <string-array name="activeLevels">
+        <item>SEDENTARY</item>
+        <item>MODERATE</item>
+        <item>ACTIVE</item>
+    </string-array>
 
-    <string name="button_menu7">Menu 07</string>
 
-    <string name="button_menu9">Menu 09</string>
+    <string-array name="sprItems">
 
-    <string name="button_menu10">Menu 10</string>
+        <item>Generally Physically Inactive</item>
 
-    <string name="button_menu8">Menu 08</string>
+        <item>Light activity</item>
 
-    <string name="AddMenuToMealPlan">Add Menu To Meal Plan</string>
+        <item>Moderate</item>
 
-    <string name="MealPlanList">Meal Plan List</string>
+        <item>Active</item>
 
-    <string name="SelectMealPlan">Select Meal Plan </string>
+        <item>Athlete</item>
 
-    <string name="SelectMealPlanToAddMenu">Select Meal Plan To Add Menu</string>
+    </string-array>
 
-    <string name="My_week1_plan">My week 1 plan</string>
 
-    <string name="button_add_new_meal_plan">Add New Meal Plan</string>
-
-    <string name="button_remove_meal_plan">Remove Meal Plan</string>
-
-    <string name="button_edit_new_meal_plan">Edit New Meal Plan</string>
-
-    <string name="Your_meal_plan">Your Meal Plan !</string>
-
-    <string name="my_meal_plan">My Meal Plan List!</string>
-
-    <string name="add_meal_plan">Add Meal Plan</string>
-
-    <string name="meal_plan_name">Meal Plan Name</string>
-
-    <string name="meal_plan_Name">Meal Plan Name</string>
-
-    <string name="add_categorized_menus">Add Your Categorized Menus Here!</string>
-
-    <string name="calorie_menus_1200">1200 Calorie Diet Plan Menus</string>
-
-    <string name="healthy_plan_menu">Healthy Meal Plan Menus</string>
-
-    <string name="Add_meal_plan2">Add Meal Plan</string>
-
-    <string name="count_meal_plans">You have x Meal Plans !</string>
-
-    <string name="add_meal_plan2">Add</string>
-
-    <string name="description_for_meal_plan">Description</string>
-
-    <string name="edit_meal_plan">Edit Meal Plan</string>
-
-    <string name="MyPlanName">My Plan Name</string>
-
-    <string name="My_meal_plan">My Meal Plan</string>
-
-    <string name="DietPlanMenu1200">1200 Cal Diet Plan-></string>
-
-    <string name="healthy_plan">Healthy Meal Plan-></string>
-
-    <string name="what_should_i_eat">What Should I Eat !</string>
-
-    <string name="edit_my_meal_plan">Edit My Meal Plan</string>
-
-    <string name="menu__11">Breakfast (271 calories)</string>
-
-    <string name="menu__12">1 serving Baked Banana-Nut Oatmeal Cups 1 medium apple</string>
-
-    <string name="menu__13">A.M. Snack (35 calories)</string>
-
-    <string name="menu__14">1 clementine</string>
-
-    <string name="menu__15">Lunch (325 calories)</string>
-
-
-    <string name="menu__16">
-
--<![CDATA[1 serving Veggie & Hummus Sandwich]]>
-</string>
-
-    <string name="menu__17">P.M. Snack (105 calories)</string>
-
-    <string name="menu__18">1 medium banana</string>
-
-    <string name="menu__19">Dinner (468 calories)</string>
-
-    <string name="menu__20">1 serving Sheet-Pan Chicken Fajita Bowls with 1/2 cup cooked brown rice</string>
-
-    <string name="menu__21">Daily Totals: 1,203 calories, 66 g protein, 177 g carbohydrate, 34 g fiber, 32 g fat, 1,186 mg sodium</string>
-
-    <string name="menu__33">Breakfast (287 calories)</string>
-
-    <string name="menu__34">1 serving Muesli with Raspberries</string>
-
-    <string name="menu__35">A.M. Snack (35 calories)</string>
-
-    <string name="menu__36">1 clementine</string>
-
-    <string name="menu__37">Lunch (344 calories)</string>
-
-    <string name="menu__38">1 serving Chipotle-Lime Cauliflower Taco Bowls</string>
-
-    <string name="menu__39">P.M. Snack (32 calories)</string>
-
-    <string name="menu__40">1/2 cup raspberries</string>
-
-    <string name="menu__41">Dinner (521 calories)</string>
-
-    <string name="menu__42">1 serving Chicken and Cucumber Lettuce Wraps with Peanut Sauce</string>
-
-    <string name="menu__43">Daily Totals: 1,220 calories, 62 g protein, 159 g carbohydrate, 42 g fiber, 46 g fat, 1,109 mg sodium</string>
-
-    <string name="click_here_to_add_plans">Click Here to Add Menus to Your plans!</string>
-
-    <string name="menu__22">Breakfast </string>
-
-    <string name="menu__23">3 Scrambled Eggs and 1 large grapefruit</string>
-
-    <string name="menu__24">A.M. Snack </string>
-
-    <string name="menu__25">25 almonds</string>
-
-    <string name="menu__26">Lunch </string>
-
-    <string name="menu__27">Turkey Wrap and 1 apple</string>
-
-    <string name="menu__28">P.M. Snack </string>
-
-    <string name="menu__29">1 piece of string cheese</string>
-
-    <string name="menu__30">Dinner </string>
-
-    <string name="menu__32">Spicy Chicken and Pasta, Side salad and 2 Tbsp olive oil/vinegar dressing.</string>
-
-    <string name="menu__44">Daily Totals: 1980 calories</string>
-
-    <string name="menu__45">Loaded Vegetable Omelet and 1 banana</string>
-
-    <string name="menu__46">1 Luna Bar</string>
-
-    <string name="menu__47">Black Bean and Cheese Burrito and 1 apple</string>
-
-    <string name="menu__48">2 small boxes of raisins</string>
-
-    <string name="menu__49">Grilled Cilantro-Lime Chicken and Salad with 2 Tbsp olive oil/vinegar dressing,1 sugar-free Fudgsicle</string>
-
-    <string name="Your_LBM_val">Enter LBM</string>
-
-    <string name="YourActivityType_pc">Select Activity Type </string>
-
-    <string name="Calculate_protein">Daily Protein Need (Grams)</string>
-
-    <string name="menu__h1">Breakfast (555 calories with 27 grams protein, 63 grams carbohydrates, and 23 grams fat)</string>
-
-    <string name="menu__h2">Two poached eggs (or fried in a non-stick pan) </string>
-
-    <string name="menu__h3">Two slices whole-grain toast with one pat of butter each</string>
-
-    <string name="menu__h4">One cup low-fat milk </string>
-
-    <string name="menu__h5">One cup of black coffee or herbal tea </string>
-
-    <string name="menu__h6"> Snack (360 calories, 14 grams protein, 78 grams carbohydrates, 1 gram fat) </string>
-
-    <string name="menu__h7">One banana </string>
-
-    <string name="menu__h8">One cup plain yogurt with two tablespoons honey </string>
-
-    <string name="menu__h9">Glass of water </string>
-
-    <string name="menu__h10">Lunch (425 calories, 44 grams protein, 37 grams carbohydrates, 9 grams fat)</string>
-
-    <string name="menu__h11">Chicken breast (6-ounce portion), baked or roasted (not breaded or fried)</string>
-
-    <string name="menu__h12">Large garden salad with tomato and onion with one cup croutons, topped with one tablespoon oil and vinegar (or salad dressing) </string>
-
-    <string name="menu__h13">Glass of water </string>
-
-    <string name="menu__h14">Snack (157 calories, 6 grams protein, 25 grams carbohydrates, 5 grams fat)</string>
-
-    <string name="menu__h15">One cup carrot slices </string>
-
-    <string name="menu__h16">Three tablespoons hummus </string>
-
-    <string name="menu__h17">One-half piece of pita bread </string>
-
-    <string name="menu_h18">Glass of water or herbal tea </string>
-
-    <string name="menu__h19">Dinner (646 calories, 42 grams protein, 77 grams carbohydrates, 8 grams fat)</string>
-
-    <string name="menu__h20">One cup steamed broccoli </string>
-
-    <string name="menu__h21">One cup of brown rice </string>
-
-    <string name="menu__h22">Halibut (four-ounce portion) </string>
-
-    <string name="menu__h23"> Small garden salad with one cup spinach leaves, tomato, and onion topped with two tablespoons oil and vinegar or salad dressing </string>
-
-    <string name="menu__h24">One glass white wine (regular or dealcoholized) </string>
-
-    <string name="menu__h25">Sparkling water with lemon or lime slice </string>
-
-    <string name="menu__h26">Snack (100 calories, 1 gram protein, 22 grams carbohydrates, 2 grams fat)</string>
-
-    <string name="menu__h27">One cup blueberries </string>
-
-    <string name="menu__h28">Two tablespoons whipped cream (the real stuff—whip your own or buy in a can) </string>
-
-    <string name="menu__h29">Glass of water </string>
-
-    <string name="lms_table">Click Here For LBM Table</string>
-
-    <string name="menu__50">Breakfast (285 calories) </string>
-
-    <string name="menu__51">1 serving "Egg in a Hole" Peppers with Avocado Salsa </string>
-
-    <string name="menu__52">Lunch (345 calories) </string>
-
-    <string name="menu__53">1 serving Curried Sweet Potato and Peanut Soup</string>
-
-    <string name="menu__54">P.M. Snack (220 calories) </string>
-
-    <string name="menu__55">1 cup raspberries and 1 oz. dark chocolate </string>
-
-    <string name="menu__56">Dinner (371 calories)</string>
-
-    <string name="menu__57">1 serving Spinach and Artichoke Dip Pasta </string>
-
-    <string name="menu__58">Daily Totals: 1,221 calories, 47 g protein, 139 g carbohydrate, 32 g fiber, 58 g fat, 1,741 mg sodium </string>
-
-    <string name="menu__59"> Breakfast (287 calories) </string>
-
-    <string name="menu__60"> 1 serving Muesli with Raspberries</string>
-
-    <string name="menu__61"> A.M. Snack (95 calories)</string>
-
-    <string name="menu__62">1 medium apple </string>
-
-    <string name="menu__63">Lunch (325 calories) </string>
-
-    <string name="menu__64">1 serving Veggie and Hummus Sandwich</string>
-
-    <string name="menu__65">P.M. Snack (77 calories) </string>
-
-    <string name="menu__66"> hard-boiled egg </string>
-
-    <string name="menu__67">Dinner (405 calories) </string>
-
-    <string name="menu__68">1 serving Curried Sweet Potato and Peanut Soup and 1 (1-in.) slice whole-wheat baguette </string>
-
-    <string name="menu__69">Daily Totals: 1,190 calories, 47 g protein, 168 g carbohydrate, 38 g fiber, 46 g fat, 1,281 mg sodium </string>
-
-    <string name="menu__70">Breakfast (271 calories) </string>
-
-    <string name="menu__71">1 serving Baked Banana-Nut Oatmeal Cups and 1 medium apple </string>
-
-    <string name="menu__72">A.M. Snack (70 calories) </string>
-
-    <string name="menu__73"> 2 clementine </string>
-
-    <string name="menu__74">Lunch (344 calories) </string>
-
-    <string name="menu__75">1 serving Chipotle-Lime Cauliflower Taco Bowls</string>
-
-    <string name="menu__76"> P.M. Snack (105 calories) </string>
-
-    <string name="menu__77">1 medium banana</string>
-
-    <string name="menu__78">Dinner (401 calories) </string>
-
-    <string name="menu__79"> 1 serving Easy Salmon Cakes over 2 cups baby spinach </string>
-
-    <string name="menu__80"> Daily Totals: 1,190 calories, 59 g protein, 176 g carbohydrate, 35 g fiber, 36 g fat, 1,534 mg sodium</string>
-
-    <string name="menu__81">2 Tbsp of peanut butter with 1 piece of toast and 1 banana </string>
-
-    <string name="menu__82">2 small boxes of raisins </string>
-
-    <string name="menu__83">Leftover Spicy Chicken and Pasta </string>
-
-    <string name="menu__84"> 0% fat Greek yoghurt </string>
-
-    <string name="menu__85">Miso Salmon and 2 cups of broccoli </string>
-
-    <string name="menu__86">Lean Eggs and Ham, 1 large grapefruit </string>
-
-    <string name="menu__87">25 almonds </string>
-
-    <string name="menu__88">Black Bean and Cheese Burrito and 1 apple </string>
-
-    <string name="menu__89">1 piece of string cheese </string>
-
-    <string name="menu__90"> Veggie Burger and bun, Salad with 4 Tbsp olive oil/vinegar dressing, 1 serving of sweet potato fries </string>
-
-    <string name="menu__91">Berry Wafflewich and 0% fat Greek yoghurt</string>
-
-    <string name="menu__92">15 snap peas and2 Tbsp of hummus </string>
-
-    <string name="menu__93"> Gobbleguac Sandwich and 1 apple </string>
-
-    <string name="menu__94">1 banana and 1 piece of string cheese</string>
-
-    <string name="menu__95"> Steamed Snapper with Pesto, 1 cup of brown rice, 2 cups of broccoli </string>
-
-    <string name="menu__2h1">Breakfast (557 calories with 18 grams protein, 102 grams carbohydrates, and 12 grams fat)</string>
-
-    <string name="menu__2h2"> Cup whole wheat flakes with one cup non-fat milk and one teaspoon sugar </string>
-
-    <string name="menu__2h3">One banana</string>
-
-    <string name="menu__2h4">One slice whole-grain toast with one tablespoon peanut butter </string>
-
-    <string name="menu__2h5">One cup of black coffee or herbal tea </string>
-
-    <string name="menu__2h6"> Snack (106 calories, 1 gram protein, 27 grams carbohydrates, 1 gram fat) </string>
-
-    <string name="menu__2h7">One cup grapes and one tangerine </string>
-
-    <string name="menu__2h8">Hot tea, or black coffee </string>
-
-    <string name="menu__2h9">Glass of water </string>
-
-    <string name="menu__2h10">Lunch (419 calories, 27 grams protein, 37 grams carbohydrates, 19 grams fat))</string>
-
-    <string name="menu__2h11">Tuna wrap with one wheat flour tortilla, one-half can water-packed tuna (drained), one tablespoon mayonnaise, lettuce, and sliced tomato</string>
-
-    <string name="menu__2h12">One sliced avocado (or salad dressing) </string>
-
-    <string name="menu__2h13">One cup non-fat milk </string>
-
-    <string name="menu__2h14">Snack (323 calories, 29 grams protein, 38 grams carbohydrates, 5 grams fat)</string>
-
-    <string name="menu__2h15">One cup cottage cheese (1-percent fat) </string>
-
-    <string name="menu__2h16">One fresh pineapple slice </string>
-
-    <string name="menu__2h17">Four graham crackers</string>
-
-    <string name="menu_2h18">Sparkling water with lemon or lime slice </string>
-
-    <string name="menu__2h19">Dinner (: 585 calories, 34 grams protein, 61 grams carbohydrates, 23 grams fat)</string>
-
-    <string name="menu__2h20">One serving lasagna </string>
-
-    <string name="menu__2h21">Small garden salad with tomatoes and onions topped with one tablespoon salad dressing </string>
-
-    <string name="menu__2h22">One cup non-fat milk</string>
-
-    <string name="menu__2h23"> Snack(158 calories, 9 grams protein, 31 grams carbohydrates, 1 gram fat) </string>
-
-    <string name="menu__2h24">One apple </string>
-
-    <string name="menu__2h25">One cup non-fat milk</string>
-
-    <string name="menu__3h1">Breakfast (approximately 401 calories with 18 grams protein, 72 grams carbohydrates, and 6 grams fat)</string>
-
-    <string name="menu__3h2"> One cup corn flakes with two teaspoons sugar and one cup non-fat milk </string>
-
-    <string name="menu__3h3">One banana</string>
-
-    <string name="menu__3h4">One hard-boiled egg </string>
-
-    <string name="menu__3h5">One cup black coffee or herbal tea </string>
-
-    <string name="menu__3h6"> Snack ( 302 calories, 15 grams protein, 46 grams carbohydrates, 8 grams fat) </string>
-
-    <string name="menu__3h7">One cup plain yogurt with one tablespoon honey, one-half cup blueberries, and one tablespoon almonds </string>
-
-    <string name="menu__3h8">Hot tea, or black coffee </string>
-
-    <string name="menu__3h9">Glass of water </string>
-
-    <string name="menu__3h10">Lunch (: 413 calories, 11 grams protein, 67 grams carbohydrates, 12 grams fat)</string>
-
-    <string name="menu__3h11">One cup whole wheat pasta with one-half cup red pasta sauce</string>
-
-    <string name="menu__3h12">Medium garden salad with tomatoes and onions and two tablespoons salad dressing </string>
-
-    <string name="menu__3h13">One cup non-fat milk </string>
-
-    <string name="menu__3h14">Snack (303 calories, 43 grams protein, 23 grams carbohydrates, 4 grams fat)</string>
-
-    <string name="menu__3h15">One and one-half cup cottage cheese </string>
-
-    <string name="menu__3h16">One fresh peach</string>
-
-    <string name="menu__3h17">Glass of water</string>
-
-    <string name="menu__3h19">Dinner ( 500 calories, 46 grams protein, 35 grams carbohydrates, 10 grams fat)</string>
-
-    <string name="menu__3h20">Four and one-half ounce serving of pork loin </string>
-
-    <string name="menu__3h21">Small garden salad with tomatoes and onions topped with two tablespoons oil and vinegar (or salad dressing) </string>
-
-    <string name="menu__3h22">One small baked sweet potato</string>
-
-    <string name="menu_3h18">	One cup asparagus and One glass wine (regular or dealcoholized) and Sparkling water with lemon or lime slice </string>
-
-    <string name="menu__3h23"> Snack(Approximately 279 calories, 10 grams protein, 50 grams carbohydrates, 3 grams fat) </string>
-
-    <string name="menu__3h24">Five graham crackers</string>
-
-    <string name="menu__3h25">	One cup non-fat milk and One cup strawberries </string>
 </resources>
