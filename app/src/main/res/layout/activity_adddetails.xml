@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adddetails">
+
+    <TextView
+        android:id="@+id/listex3"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alef"
+        android:gravity="start"
+        android:text="@string/listex3"
+        android:textAlignment="viewStart"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time5" />
+
+    <TextView
+        android:id="@+id/time5"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="start"
+        android:text="@string/time5"
+        android:textAlignment="viewStart"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlist" />
+
+    <EditText
+        android:id="@+id/txtlist"
+        android:layout_width="354dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/concert_one"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:text="@string/txtlist"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listex" />
+
+    <EditText
+        android:id="@+id/time7"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/concert_one"
+        android:inputType="number"
+        android:outlineProvider="none"
+        android:text="@string/txtlist"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/listex3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/listex3" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/cus_btn2"
+        android:backgroundTint="#1fb598"
+        android:onClick="showAlertDialog"
+        android:text="@string/add"
+        android:textSize="16sp"
+        app:backgroundTint="#1FB598"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="@+id/listex3"
+        app:layout_constraintTop_toBottomOf="@+id/time7"
+        app:layout_constraintVertical_bias="0.576"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="start"
+        android:text="@string/day"
+        android:textAlignment="viewStart"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list6"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="start"
+        android:text="@string/list6"
+        android:textAlignment="viewStart"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listex"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/alef"
+        android:gravity="start"
+        android:text="@string/listex"
+        android:textAlignment="viewStart"
+        android:textColor="#ffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list6" />
+
+    <EditText
+        android:id="@+id/day1"
+        android:layout_width="354dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/concert_one"
+        android:inputType="textPersonName"
+        android:text="@string/day1"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

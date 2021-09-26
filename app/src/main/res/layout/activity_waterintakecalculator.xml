@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".WaterIntakeCalculator">
+
+    <Button
+        android:id="@+id/watercalculator"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+
+        android:background="@drawable/cus_btn2"
+        android:text="@string/watercalculator"
+        android:textSize="16sp"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minofex"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/watertext2"
+        android:layout_width="342dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="start"
+        android:text="@string/watertext2"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbodyweigt" />
+
+    <TextView
+        android:id="@+id/watertext1"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="start"
+        android:text="@string/watertext1"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tbodyweigt"
+        android:layout_width="272dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="@string/tbodyweigt"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watertext1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/minofex"
+        android:layout_width="272dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:background="#F8F5F5"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="@string/minofex"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watertext2" />
+
+    <TextView
+        android:id="@+id/calresult"
+        android:layout_width="258dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/concert_one"
+        android:text="@string/calresult"
+        android:textColor="#009688"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watercalculator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="276dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

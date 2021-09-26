@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:textAlignment="center"
+    tools:context=".WelcomeToTimetablePage"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/tstartedbtn"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/cus_btn2"
+        android:backgroundTint="#1fb598"
+        android:text="@string/tstartedbtn"
+        app:backgroundTint="#1FB598"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintext1" />
+
+    <TextView
+        android:id="@+id/maintext1"
+        android:layout_width="333dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/secular_one"
+        android:gravity="center_horizontal"
+        android:text="@string/maintext1"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wcalbtn"
+        android:layout_width="356dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/cus_btn2"
+        android:backgroundTint="#577284"
+        android:text="@string/wcalbtn"
+        app:backgroundTint="#577284"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tstartedbtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/cus_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
