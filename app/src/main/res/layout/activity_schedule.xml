@@ -54,10 +54,11 @@
     </TextView>
     <Spinner
         android:id="@+id/reps_count"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:padding="5dp"
+        android:paddingHorizontal="10dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"/>
     <TextView
@@ -71,8 +72,9 @@
     </TextView>
     <Spinner
         android:id="@+id/sets_count"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
         android:background="@android:drawable/btn_dropdown"
         android:layout_marginTop="10dp"
         android:layout_gravity="right"
