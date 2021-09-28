@@ -41,8 +41,8 @@ public class ScheduleActivity extends AppCompatActivity {
         workout_name.setText(name);
 
         add_btn = findViewById(R.id.add);
-        String[] reps = new String[]{"1","2","3","4","5","6","7","8","9","10","11","12"};
-        String[] sets = new String[]{"1", "2", "3"};
+        String[] reps = new String[]{"Select the Reps Count","1","2","3","4","5","6","7","8","9","10","11","12"};
+        String[] sets = new String[]{"Select the Sets Count","1", "2", "3"};
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, reps);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, sets);
@@ -54,23 +54,29 @@ public class ScheduleActivity extends AppCompatActivity {
         add_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-                Date date = new Date();
-                String current_date = dateFormat.format(date);
-                Schedule schedule = new Schedule();
-                schedule.setWorkout_id(id);
-                schedule.setWorkout_name(name);
-                schedule.setReps(reps_count.getSelectedItem().toString());
-                schedule.setSets(sets_count.getSelectedItem().toString());
-                schedule.setType(type);
-                schedule.setDate(current_date);
-
-                WorkoutDBHelper helper = new WorkoutDBHelper(ScheduleActivity.this);
-                if(helper.add_schedule(schedule)){
-                    Toast.makeText(ScheduleActivity.this,"Successfully added",Toast.LENGTH_SHORT).show();
-                    onBackPressed();
+                if(reps_count.getSelectedItemPosition() == 0){
+                    Toast.makeText(ScheduleActivity.this,"Please Select Reps Count",Toast.LENGTH_SHORT).show();
+                }else if(sets_count.getSelectedItemPosition() == 0){
+                    Toast.makeText(ScheduleActivity.this,"Please Select Sets Count",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(ScheduleActivity.this,"Something wrong happened",Toast.LENGTH_SHORT).show();
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+                    Date date = new Date();
+                    String current_date = dateFormat.format(date);
+                    Schedule schedule = new Schedule();
+                    schedule.setWorkout_id(id);
+                    schedule.setWorkout_name(name);
+                    schedule.setReps(reps_count.getSelectedItem().toString());
+                    schedule.setSets(sets_count.getSelectedItem().toString());
+                    schedule.setType(type);
+                    schedule.setDate(current_date);
+
+                    WorkoutDBHelper helper = new WorkoutDBHelper(ScheduleActivity.this);
+                    if(helper.add_schedule(schedule)){
+                        Toast.makeText(ScheduleActivity.this,"Successfully added",Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                    }else{
+                        Toast.makeText(ScheduleActivity.this,"Something wrong happened",Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

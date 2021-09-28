@@ -14,6 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fitforever.DB.WorkoutDBHelper;
 import com.example.fitforever.Model.Schedule;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class UpdateScheduleActivity extends AppCompatActivity {
     Spinner reps_count,sets_count;
     Button update_btn,delete_btn;
@@ -41,8 +45,8 @@ public class UpdateScheduleActivity extends AppCompatActivity {
         workout_id.setText(schedule.getWorkout_id());
 
 
-        String[] reps = new String[]{"1","2","3","4","5","6","7","8","9","10","11","12"};
-        String[] sets = new String[]{"1", "2", "3"};
+        String[] reps = new String[]{"Select the Reps Count","1","2","3","4","5","6","7","8","9","10","11","12"};
+        String[] sets = new String[]{"Select the Sets Count","1", "2", "3"};
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, reps);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, sets);
@@ -50,20 +54,27 @@ public class UpdateScheduleActivity extends AppCompatActivity {
         reps_count.setAdapter(adapter1);
         sets_count.setAdapter(adapter2);
 
-        reps_count.setSelection(Integer.parseInt(schedule.getReps())-1);
-        sets_count.setSelection(Integer.parseInt(schedule.getSets())-1);
+        reps_count.setSelection(Integer.parseInt(schedule.getReps()));
+        sets_count.setSelection(Integer.parseInt(schedule.getSets()));
 
         update_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                schedule.setReps(reps_count.getSelectedItem().toString());
-                schedule.setSets(sets_count.getSelectedItem().toString());
-                if(helper.updateSchedule(schedule)){
-                    Toast.makeText(UpdateScheduleActivity.this,"Successfully Updated",Toast.LENGTH_SHORT).show();
-                    onBackPressed();
+                if(reps_count.getSelectedItemPosition() == 0){
+                    Toast.makeText(UpdateScheduleActivity.this,"Please Select Reps Count",Toast.LENGTH_SHORT).show();
+                }else if(sets_count.getSelectedItemPosition() == 0){
+                    Toast.makeText(UpdateScheduleActivity.this,"Please Select Sets Count",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(UpdateScheduleActivity.this,"Something wrong happened",Toast.LENGTH_SHORT).show();
+                    schedule.setReps(reps_count.getSelectedItem().toString());
+                    schedule.setSets(sets_count.getSelectedItem().toString());
+                    if(helper.updateSchedule(schedule)){
+                        Toast.makeText(UpdateScheduleActivity.this,"Successfully Updated",Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                    }else{
+                        Toast.makeText(UpdateScheduleActivity.this,"Something wrong happened",Toast.LENGTH_SHORT).show();
+                    }
                 }
+
             }
         });
         delete_btn.setOnClickListener(new View.OnClickListener() {
